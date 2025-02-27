@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VISION Techi </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="./img/VISION TECHI LOGO.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid header position-relative overflow-hidden p-0" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/VISION TECHI LOGO.png" alt="Logo" style="width: 145px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="service.html" id="servicesDropdown" role="button"
+                            aria-expanded="false" data-bs-toggle="dropdown" onclick="handleServiceClick(event)">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="bulkSmsDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Bulk SMS</a>
+                                <ul class="dropdown-menu-option">
+                                    <li><a class="dropdown-item" href="transactional.html">Transactional SMS</a></li>
+                                    <li><a class="dropdown-item" href="promotional.html">Promotional SMS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="https://sms.visionhlt.com/" class="btn btn-light  rounded-pill text-primary py-2 px-4 me-4"
+                    style="border-color: #f74780;">Log
+                    In</a>
+            </div>
+        </nav>
+
+
+        <!-- Hero Header Start -->
+        <div id="heroCarousel" class="carousel slide hero-header overflow-hidden px-5 " data-bs-ride="carousel"
+            data-bs-interval="3000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row gy-5 align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-4 text-dark mb-4">Welcome to <span>VISION Techi</span></h1>
+                            <p class="fs-4 mb-4">VISION Techi has a objective<br> solution
+                                around a specific need of industries,<br>business and companies</p>
+                            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" style="border-color: #f74780;">Get
+                                Started</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/slide/slide-1.jpg" class="w-100 h-100 rounded-3 border border-5" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row gy-5 align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-4 text-dark mb-4">Communication In Marketing</h1>
+                            <p class="fs-4 mb-4">VISION Techi selects the right medium of<br>communication to
+                                spreead your word in<br>terms of Marketing</p>
+                            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" style="border-color: #f74780;">Get
+                                Started</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/slide/slide-2.jpg" class="w-100 h-100 rounded-3 border border-5" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row gy-5 align-items-center">
+                        <div class="col-lg-6">
+                            <h1 class="display-4 text-dark mb-4">Online Services</h1>
+                            <p class="fs-4 mb-4">VISION Techi have spread our wings in<br>Online services to
+                                faciliate all smal and<br>medium bussiness and startups in india</p>
+                            <a href="contact.html" class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" style="border-color: #f74780;">Get
+                                Started</a>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/slide/slide-3.jpg" class="w-100 h-100 rounded-3 border border-5" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            </button>
+        </div>
+        <!-- Hero Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid overflow-hidden">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="RotateMoveLeft">
+                        <img src="img/about.png" alt="" class="about-img">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp about" data-wow-delay="0.3s">
+                    <h4 class="mb-1" style="color: #f74780;">About Us</h4>
+                    <p class="mb-4" style="text-align: justify; font-size: larger;">We are a leading online service
+                        provider specializing in bulk SMS, official and unofficial
+                        WhatsApp messages, voice calls, and IVR services across various industries. Our services are
+                        designed to support small and medium businesses, industries as well as startups in India, by
+                        providing effective communication solutions for marketing and outreach. <br><br>
+
+                        At VISION Techi, our objective is to create solutions
+                        tailored to the specific needs of industries, businesses, and companies. DigiDonar delivers
+                        unmatched business value to customers through a combination of solution excellence, a quality
+                        framework, and service delivery innovation.
+                    </p>
+                    <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5"
+                        style="border-color: #f74780;">About More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid service pb-5">
+        <div class="container pb-5">
+            <div class="text-center mx-auto my-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <h4 class="mb-1 " style="color: #f74780;">Our Service</h4>
+                <h1 class="display-5 mb-4">What We Can Do For You</h1>
+                <p class="mb-0">We are leading providers of bulk SMS and IVR services, empowering small and medium
+                    businesses across India with innovative communication solutions. Through DigiDonar, we deliver
+                    unmatched value with excellence and innovation.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center d-flex">
+                <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                    <div class="service-item text-center rounded p-4 h-100 w-100">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4 ">
+                            <img src="./img/bulk sms.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4 class="mb-4">Bulk SMS</h4>
+                            <p class="mb-4">Bulk SMS is useful for building your Business. We provide text as well as
+                                voice messages, which are faster, economical, and efficient.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                    <div class="service-item text-center rounded p-4 h-100 w-100">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                            <img src="./img/voice call.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4 class="mb-4">Voice Call</h4>
+                            <p class="mb-4">Voice SMS are pre-recorded voice messages to a mobile across the country.
+                                Voice Calls are completely automated process hence no operators or dialer is need to
+                                process the calls.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                    <div class="service-item text-center rounded p-4 h-100 w-100">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                            <img src="./img/whatsapp.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4 class="mb-4">Whatsapp SMS</h4>
+                            <p class="mb-4">Boost Your Business with WhatsApp Messaging!
+                                We offer text and voice messages on WhatsApp that are fast, cost-effective, and highly
+                                efficient. Reach your customers instantly, engage better, and grow your business
+                                effortlessly!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                    <div class="service-item text-center rounded p-4 h-100 w-100">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                            <img src="./img/tollfree.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4 class="mb-4">Toll Free Number</h4>
+                            <p class="mb-4">Domestic and international toll free numbers - the fastest way to contact
+                                your business.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-xl-4 d-flex">
+                    <div class="service-item text-center rounded p-4 h-100 w-100">
+                        <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
+                            <img src="./img/missedcall.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4 class="mb-4">Missed Call Service</h4>
+                            <p class="mb-4">Build interactive campaigns, get instant customer feedback with India’s best
+                                missed call service provider.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Service End -->
+    <section id="features" class="features section">
+
+        <div class="container">
+
+            <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+                <li class="nav-item col-3">
+                    <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                        <i class="bi bi-binoculars"></i>
+                        <h4 class="d-none d-lg-block">Multiple Routes for Delivery</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                        <i class="bi bi-box-seam"></i>
+                        <h4 class="d-none d-lg-block">Secured HTTP API</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                        <i class="bi bi-brightness-high"></i>
+                        <h4 class="d-none d-lg-block">Carry Forward Balance</h4>
+                    </a>
+                </li>
+                <li class="nav-item col-3">
+                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                        <i class="bi bi-command"></i>
+                        <h4 class="d-none d-lg-block">Genuine Delivery Report</h4>
+                    </a>
+                </li>
+            </ul><!-- End Tab Nav -->
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="tab-pane fade active show" id="features-tab-1">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 features-text mt-lg-0">
+                            <h3>Enhancing SMS Reliability with Multiple Reputed Providers</h3>
+                            <p style="text-align: justify;    padding: 28px;
+    font-size: large;">
+                                Having multiple routing options with renowned and reliable SMS providers allows us to
+                                ensure seamless message delivery while minimizing downtime. By leveraging a network of
+                                trusted providers, we can dynamically switch routes in case of any disruptions, ensuring
+                                that messages reach their recipients without delays. This redundancy enhances our
+                                system's reliability, reduces the risk of service interruptions, and optimizes the
+                                overall efficiency of our SMS delivery. Additionally, working with reputable providers
+                                helps maintain high delivery rates, ensuring that our messages consistently reach their
+                                intended destinations.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="./img/features-1.png" alt="" style="height: 78%;">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content Item -->
+
+                <div class="tab-pane fade" id="features-tab-2">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 mt-lg-0 features-text">
+                            <h3>Secure & Reliable SMS Integration via Our HTTP API</h3>
+                            <p style="text-align: justify;     padding: 28px;
+    font-size: large;">
+                                Our secured HTTP API enables effortless integration with your website or application,
+                                allowing you to send SMS messages to your customers quickly and efficiently. Designed
+                                for reliability and security, our API ensures end-to-end encryption, safeguarding your
+                                data while maintaining high delivery rates. Whether you need to send transactional
+                                updates, promotional messages, or alerts, our robust API provides a seamless solution
+                                that integrates smoothly with your existing systems. With easy-to-use documentation and
+                                developer-friendly features, you can streamline your communication process and enhance
+                                customer engagement effortlessly.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center features-img">
+                            <img src="./img/features-img.avif" alt="">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content Item -->
+
+                <div class="tab-pane fade" id="features-tab-3">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 features-text mt-lg-0">
+                            <h3>Carry Forward Unused SMS Credits & Maximize Your Benefits</h3>
+                            <p style="text-align: justify; padding: 28px;font-size: large;">
+                                We understand the importance of flexibility when it comes to your SMS usage. That’s why
+                                any unused SMS credits from your account can be seamlessly carried forward into the new
+                                calendar year. This ensures that you get the full value of your purchase without
+                                worrying about losing credits due to expiration. Whether your business experiences
+                                seasonal fluctuations or varying messaging needs, our rollover feature allows you to
+                                optimize your SMS usage efficiently. With this benefit, you can plan your communication
+                                strategies with confidence, knowing that your credits remain available for future use.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="./img/features-3.png" alt="" style="height: 78%;">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content Item -->
+
+                <div class="tab-pane fade" id="features-tab-4">
+                    <div class="row">
+                        <div class="col-lg-6 order-2 order-lg-1 features-text mt-lg-0">
+                            <h3>Authentic Delivery Reports with Multi-Operator Support</h3>
+                            <p style="text-align: justify;    padding: 28px;
+    font-size: large;">
+                                We work with multiple telecom operators to ensure your messages are delivered quickly
+                                and reliably. By partnering with trusted providers, we offer accurate and genuine
+                                delivery reports, so you always know the status of your SMS campaigns. This approach
+                                improves reliability, reduces the chances of failed deliveries, and helps your messages
+                                reach the right people on time. With real-time tracking and clear insights, you can
+                                easily monitor performance and make informed decisions to improve your communication.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 order-1 order-lg-2 text-center">
+                            <img src="./img/features-4.png" alt="" style="height: 78%;">
+                        </div>
+                    </div>
+                </div><!-- End Tab Content Item -->
+            </div>
+        </div>
+    </section>
+    <!-- End Features Section -->
+
+    <!-- Blog Start -->
+    <!-- <div class="container-fluid blog py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <h4 class="text-primary">Our Blog</h4>
+                <h1 class="display-5 mb-4">Join Us For New Blog</h1>
+                <p class="mb-0">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet
+                    doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores
+                    vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-1.png" class="img-fluid w-100" alt="">
+                            <div class="blog-info">
+                                <span><i class="fa fa-clock"></i> Dec 01.2024</span>
+                                <div class="d-flex">
+                                    <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
+                                    <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-dark border p-4 ">
+                            <h5 class="mb-4">Dolor, sit amet consectetur adipisicing</h5>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.
+                            </p>
+                            <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-2.png" class="img-fluid w-100" alt="">
+                            <div class="blog-info">
+                                <span><i class="fa fa-clock"></i> Dec 01.2024</span>
+                                <div class="d-flex">
+                                    <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
+                                    <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-dark border p-4 ">
+                            <h5 class="mb-4">Dolor, sit amet consectetur adipisicing</h5>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.
+                            </p>
+                            <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-3.png" class="img-fluid w-100" alt="">
+                            <div class="blog-info">
+                                <span><i class="fa fa-clock"></i> Dec 01.2024</span>
+                                <div class="d-flex">
+                                    <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
+                                    <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-dark border p-4 ">
+                            <h5 class="mb-4">Dolor, sit amet consectetur adipisicing</h5>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.
+                            </p>
+                            <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/blog-4.png" class="img-fluid w-100" alt="">
+                            <div class="blog-info">
+                                <span><i class="fa fa-clock"></i> Dec 01.2024</span>
+                                <div class="d-flex">
+                                    <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
+                                    <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-content text-dark border p-4 ">
+                            <h5 class="mb-4">Dolor, sit amet consectetur adipisicing</h5>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip.
+                            </p>
+                            <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Blog End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial">
+        <div class="container mt-3">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <h4 style="color: #f74780;">Testimonial</h4>
+                <h1 class="display-5">What Our Client Say About Us</h1>
+                <p class="mb-0">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet
+                    doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores
+                    vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.
+                </p>
+            </div>
+            <div class="testimonial-carousel owl-carousel wow zoomInDown" data-wow-delay="0.2s">
+                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-1.jpg' alt=''>">
+                    <div class="testimonial-inner text-center p-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <div class="testimonial-inner-img border border-primary border-3 me-4"
+                                style="width: 100px; height: 100px; border-radius: 50%;">
+                                <img src="img/testimonial-img-1.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">John Abraham</h5>
+                                <p class="mb-0">New York, USA</p>
+                            </div>
+                        </div>
+                        <p class="fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo
+                            facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
+                            voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
+                        </p>
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-2.jpg' alt=''>">
+                    <div class="testimonial-inner text-center p-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <div class="testimonial-inner-img border border-primary border-3 me-4"
+                                style="width: 100px; height: 100px; border-radius: 50%;">
+                                <img src="img/testimonial-img-2.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">John Abraham</h5>
+                                <p class="mb-0">New York, USA</p>
+                            </div>
+                        </div>
+                        <p class="fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo
+                            facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
+                            voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
+                        </p>
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item" data-dot="<img class='img-fluid' src='img/testimonial-img-3.jpg' alt=''>">
+                    <div class="testimonial-inner text-center p-5">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <div class="testimonial-inner-img border border-primary border-3 me-4"
+                                style="width: 100px; height: 100px; border-radius: 50%;">
+                                <img src="img/testimonial-img-3.jpg" class="img-fluid rounded-circle" alt="">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">John Abraham</h5>
+                                <p class="mb-0">New York, USA</p>
+                            </div>
+                        </div>
+                        <p class="fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nemo
+                            facilis tempora esse explicabo sed! Dignissimos quia ullam pariatur blanditiis sed
+                            voluptatum. Totam aut quidem laudantium tempora. Minima, saepe earum!
+                        </p>
+                        <div class="text-center">
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer  wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Company & Quick Links -->
+                <div class="col-md-4">
+                    <div class="footer-item d-flex flex-column mt-4">
+                        <h4 class="mb-4 text-dark">Quick Links</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="about.html">Our Team</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Services</h4>
+                        <a href="service.html">All Services</a>
+                        <a href="">Bulk SMS</a>
+                        <a href="">Voice Call</a>
+                        <a href="">WhatsApp SMS</a>
+                        <a href="">Toll-Free Number</a>
+                        <a href="">Missed Call Service</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info & Social Media -->
+                <div class="col-md-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Contact Info</h4>
+                        <p><i class="fa fa-map-marker-alt me-2"></i> Office-403, 4th Floor, Kirdat Park, Near Landmark
+                            Tower, Karanje Turf, Satara, MH 415002</p>
+                        <p><i class="fas fa-envelope me-2"></i> pranita@visionhlt.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +91 96657 38008</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4 class="mb-3 text-dark">Follow Us</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-square rounded-circle mx-1"
+                                href="https://www.facebook.com/profile.php?id=61565020565112"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" href=""><i
+                                    class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Jijau
+                            Software</a>,
+                        All right reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
