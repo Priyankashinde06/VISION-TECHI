@@ -351,6 +351,7 @@
         padding: 0 30px 30px 0;
     }
 
+    
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
         margin-top: 48px;
@@ -1129,11 +1130,30 @@ section {
     background: white;
   }
   
-  .team .member .pic {
-    overflow: hidden;
-    width: 177px;
-    border-radius: 4px;
+  /* Default image size for larger screens */
+.team .member img {
+    width: 200px; /* Adjust this as needed */
+    height: 200px; /* Adjust this as needed */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
   }
+  
+  /* Adjust for smaller screens (e.g., tablets, mobile devices) */
+  @media (max-width: 768px) {
+    .team .member img {
+      width: 150px; /* Reduce size on smaller screens */
+      height: 150px; /* Adjust height accordingly */
+    }
+  }
+  
+  /* Further adjust for very small screens (mobile devices) */
+  @media (max-width: 480px) {
+    .team .member img {
+      width: 120px; /* Further reduce size on mobile */
+      height: 120px; /* Adjust height for mobile */
+    }
+  }
+  
+  
   
   .team .member .pic img {
     transition: ease-in-out 0.3s;
