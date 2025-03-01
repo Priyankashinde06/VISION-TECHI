@@ -1238,37 +1238,55 @@ section {
 /*** Features End ***/
 
 .services .icon-box {
-    margin-bottom: 20px;
-    padding: 30px;
-    border-radius: 6px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    height: 100%; /* Ensures equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .services .icon-box i {
-    float: left;
-    color: #d9232d;
     font-size: 40px;
-}
-
-.services .icon-box h4 {
-    margin-left: 70px;
-    font-weight: 700;
+    color: #d9232d;
     margin-bottom: 15px;
-    font-size: 18px;
 }
-
 .services .icon-box h4 a {
     color: #556270;
     transition: 0.3s;
 }
 
-.services .icon-box p {
-    margin-left: 70px;
-    line-height: 24px;
-    font-size: 14px;
+.services .icon-box h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.services .icon-box:hover h4 a {
-    color: #d9232d;
+.services .icon-box p {
+    flex-grow: 1; /* Allows text content to adjust inside the box */
+    font-size: 14px;
+    color: #555;
+}
+
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .col-md-6 {
+    display: flex;
+    padding: 15px;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 /*** Pricing Start ***/
