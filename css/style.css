@@ -18,7 +18,7 @@
     /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
     --contrast-color: #ffffff;
     /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-    --bs-primary:#f74780;
+    --bs-primary:#A03232;
 }
 
 /*** Spinner Start ***/
