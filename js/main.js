@@ -181,32 +181,32 @@ $(".back-to-top").on("click", function (event) {
 
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 5,  // Default for large screens
-      spaceBetween: 20,
-      loop: true,  
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        1200: { slidesPerView: 6 }, // Large screens
-        992: { slidesPerView: 4 },  // Medium screens
-        768: { slidesPerView: 3 },  // Tablets
-        576: { slidesPerView: 2 },  // Small screens
-        320: { slidesPerView: 3 }   // Extra small screens (phones)
-      },
+        slidesPerView: 5,  // Default for large screens
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            1200: { slidesPerView: 6 }, // Large screens
+            992: { slidesPerView: 4 },  // Medium screens
+            768: { slidesPerView: 3 },  // Tablets
+            576: { slidesPerView: 2 },  // Small screens
+            320: { slidesPerView: 3 }   // Extra small screens (phones)
+        },
     });
-  });
+});
 
-  let clickTimer = null;
+let clickTimer = null;
 
 function handleDropdownClick(event, url) {
     event.preventDefault(); // Prevent default link behavior
@@ -254,17 +254,22 @@ document.addEventListener("click", function (event) {
 });
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".partnerSwiper", {
-        slidesPerView: 1,
+        slidesPerView: 3, // Default for small screens
         spaceBetween: 10,
-        loop: true,
+        loop: true, // Ensures infinite scrolling
+        loopFillGroupWithBlank: true, // Prevents stopping at last slide
+        slidesPerGroup: 1, // Moves one slide at a time
+        loopAdditionalSlides: 6, // Fix for stopping issue
         autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
+            delay: 2000, // Auto-scrolls every 2 sec
+            disableOnInteraction: false, // Keeps autoplay running after user swipes
         },
+        speed: 1000, // Smooth transition speed
         breakpoints: {
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 5},
+            640: { slidesPerView: 2 }, // Show 2 slides on mobile
+            768: { slidesPerView: 3 }, // Show 3 slides on tablets
+            1024: { slidesPerView: 4 }, // Show 4 slides on small desktops
+            1280: { slidesPerView: 5 }, // Show 6 slides on large screens
         },
     });
 });
