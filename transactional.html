@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VISION Techi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <!-- Favicons -->
+    <link href="./img/VISION TECHI LOGO.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border " style="width: 3rem; height: 3rem; color:#A03232;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <img src="img/VISION TECHI LOGO.png" alt="Logo" style="width: 145px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="service.html" id="servicesDropdown" role="button"
+                            aria-expanded="false" data-bs-toggle="dropdown" onclick="handleServiceClick(event)">
+                            Services<i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="bulk-sms.html" id="bulkSmsDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                    onclick="handleDropdownClick(event, 'bulk-sms.html')">Bulk SMS <i class="fa-solid fa-angle-down"></i></a>
+                        
+                                <ul class="dropdown-menu-option">
+                                    <li><a class="dropdown-item" href="transactional.html">Transactional SMS</a></li>
+                                    <li><a class="dropdown-item" href="promotional.html">Promotional SMS</a></li>
+                                    <li><a class="dropdown-item" href="promotional.html">OTP Bulk SMS</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="voice-call.html" id="voiceCallDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                onclick="handleDropdownClick(event, 'voice-call.html')">Voice Call <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="dropdown-menu-option">
+                                    <li><a class="dropdown-item" href="bulk-voice-call.html">Bulk Voice Call</a></li>
+                                    <li><a class="dropdown-item" href="voice-otp.html">Voice OTP</a></li>
+                                    <li><a class="dropdown-item" href="ivr-service.html">IVR Services</a></li>
+                                </ul>
+                            </li>
+                        </ul>                       
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="https://sms.visionhlt.com/" class="btn btn-light  rounded-pill text-primary py-2 px-4 me-4"
+                    style="border-color: #A03232;">Log
+                    In</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <ul class="breadcrumb-animation">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Transactional SMS</h1>
+                <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item">Service</li> 
+                    <li class="breadcrumb-item">Bulk SMS</li> 
+                    <li class="breadcrumb-item active" style="color: #A03232;">Transactional SMS</li>
+                </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Service Start -->
+    <section>
+        <div class="container">
+            <h2 class="heading04 text-center animate-plus" data-animations="fadeInUp"
+                data-animation-when-visible="true"></h2>
+            <div class="aboutcontnt animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+
+                <div class="row">
+
+                    <div class="col-md-5">
+                        <p class="market-img imgcenter"><img src="./img/transactional.png"
+                                class="img-responsive transactional"></p>
+                    </div>
+
+                    <div class="col-md-7">
+                        <h2 class="title" style="font-size:32px; color: #A03232; font-weight: bold;">Transactional Bulk SMS Service
+                        </h2>
+                        <div class="txt22">
+                            <p style="text-align: justify; font-size: 18px;">We provide scalable, reliable enterprise SMS solutions with multiple services in one
+                                user-friendly web interface, including India Transaction, Service, and Promotion SMS,
+                                International SMS, and Missed Call Numbers. Our platform supports easy API integration
+                                and covers 205+ countries, 800+ networks, and 300+ direct connections, reaching 5.7
+                                billion mobile devices. Whether you're new or experienced, 24X7 SMS is your one-stop
+                                solution for customized messaging needs.
+                            </p>
+                        </div>
+                        <h2 class="title" style="font-size:26px;font-weight: bold; color: #A03232;">Industries Benefiting
+                        </h2>
+                        <div class="txt22">
+                            <p style="font-size: 20px; text-align: justify;">
+                            <ul style="font-size: 20px;">
+                                <li>Banking & Financial Services </li>
+                                <li>E-commerce & Retail </li>
+                                <li>Healthcare </li>
+                                <li>Government & Public Services</li>
+                                <li>IT & Software</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer  wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-4">
+            <div class="row g-5">
+                <!-- Company & Quick Links -->
+                <div class="col-md-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Quick Links</h4>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms & Conditions</a>
+                        <a href="about.html">Our Team</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Services</h4>
+                        <a href="service.html">All Services</a>
+                        <a href="">Bulk SMS</a>
+                        <a href="">Voice Call</a>
+                        <a href="">WhatsApp SMS</a>
+                        <a href="">Toll-Free Number</a>
+                        <a href="">Missed Call Service</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info & Social Media -->
+                <div class="col-md-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-dark">Contact Info</h4>
+                        <p><i class="fa fa-map-marker-alt me-2"></i> Office-403, 4th Floor, Kirdat Park, Near Landmark
+                            Tower, Karanje Turf, Satara, MH 415002</p>
+                        <p><i class="fas fa-envelope me-2"></i> pranita@visionhlt.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +91 96657 38008</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4 class="mb-3 text-dark">Follow Us</h4>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" style="border-color: #A03232;"
+                                href="https://www.facebook.com/profile.php?id=61565020565112"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" style="border-color: #A03232;"
+                                href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" style="border-color: #A03232;"
+                                href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle mx-1" style="border-color: #A03232;"
+                                href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>VISION
+                            Techi</a>,
+                        All right reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
