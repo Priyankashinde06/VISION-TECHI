@@ -266,8 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         speed: 1000, // Smooth transition speed
         breakpoints: {
-            640: { slidesPerView: 2 }, // Show 2 slides on mobile
-            768: { slidesPerView: 3 }, // Show 3 slides on tablets
+            640: { slidesPerView: 3 }, // Show 2 slides on mobile
+            768: { slidesPerView: 4 }, // Show 3 slides on tablets
             1024: { slidesPerView: 4 }, // Show 4 slides on small desktops
             1280: { slidesPerView: 5 }, // Show 6 slides on large screens
         },
