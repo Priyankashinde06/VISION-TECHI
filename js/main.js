@@ -254,7 +254,7 @@ document.addEventListener("click", function (event) {
 });
 document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".partnerSwiper", {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 10,
         loop: true,
         autoplay: {
