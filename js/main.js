@@ -252,28 +252,6 @@ document.addEventListener("click", function (event) {
         }
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".partnerSwiper", {
-        slidesPerView: 3, // Default for small screens
-        spaceBetween: 10,
-        loop: true, // Ensures infinite scrolling
-        loopFillGroupWithBlank: true, // Prevents stopping at last slide
-        slidesPerGroup: 1, // Moves one slide at a time
-        loopAdditionalSlides: 6, // Fix for stopping issue
-        autoplay: {
-            delay: 2000, // Auto-scrolls every 2 sec
-            disableOnInteraction: false, // Keeps autoplay running after user swipes
-        },
-        speed: 1000, // Smooth transition speed
-        breakpoints: {
-            640: { slidesPerView: 2 }, // Show 2 slides on mobile
-            768: { slidesPerView: 3 }, // Show 3 slides on tablets
-            1024: { slidesPerView: 4 }, // Show 4 slides on small desktops
-            1280: { slidesPerView: 5 }, // Show 6 slides on large screens
-        },
-    });
-});
-
 function handleServiceClick(event) {
     event.preventDefault(); // Prevent default action
 }
