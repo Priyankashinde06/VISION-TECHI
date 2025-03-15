@@ -256,7 +256,7 @@ function handleServiceClick(event) {
     event.preventDefault(); // Prevent default action
 }
 
-function redirectTo(event, url) {
-    event.preventDefault(); // Prevent the default anchor action
-    window.open(url, '_blank'); // Open the URL in a new window/tab
-}
+// function redirectTo(event, url) {
+//     event.preventDefault(); // Prevent the default anchor action
+//     window.open(url, '_blank'); // Open the URL in a new window/tab
+// }

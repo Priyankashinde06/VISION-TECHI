@@ -532,9 +532,9 @@
     }
 
     .whatsapp-img {
-        height: 16rem;
-        width: 26rem;
-        margin-left: -11%;
+        height: auto;
+        width: 25rem;
+        margin-left: -7%;
     }
 
     .voip-img {
