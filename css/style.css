@@ -236,7 +236,7 @@
     }
 
     .RotateMoveLeft {
-        margin-left: -10rem;
+        margin-left: -14rem;
     }
 
     .RotateMoveLeft img {
@@ -537,6 +537,12 @@
         margin-left: -11%;
     }
 
+    .voip-img {
+        height: auto;
+        width: 24rem;
+        margin-left: -6%;
+    }
+
     .election-img  {
         height: 16rem;
         width: 26rem;
@@ -544,6 +550,11 @@
     }
 
     .wp-img {
+        height: auto;
+        width: 23rem;
+        margin-left: -3%;
+    }
+    .election-img {
         height: auto;
         width: 23rem;
         margin-left: -3%;
@@ -609,7 +620,7 @@
 
     .sticky-top.navbar-light {
         position: fixed;
-        height: 76px;
+        height: 64px;
         background: var(--bs-light) !important;
     }
 
@@ -633,7 +644,9 @@
         height: auto;
         width: 34rem;
     }
-
+    .voip{
+        margin-top: 5rem;
+    }
     .titlet {
         font-size: 44px;
         font-weight: 500;
@@ -662,16 +675,27 @@
         height: auto;
         width: 30rem;
     }
-
+    .voip-img {
+        height: auto;
+        width: 31rem;
+    }
     .election-img  {
         height: auto;
-        width: 30rem;
+        width: 35rem;
+        margin-top: -1rem;
+        margin-left: 2rem;
     }
 
     .wp-img {
         height: auto;
         width: 39rem;
     }
+    /* .election-img {
+        height: auto;
+        width: 35rem;
+        margin-top: -1rem;
+        margin-left: 2rem;
+    } */
 
     .otp-title {
         margin-top: -2rem;
@@ -728,7 +752,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 150px 0 4px 0;
+    padding: 100px 0 0px 0;
     /* margin-bottom: 6rem; */
     transition: 0.5s;
 }
@@ -3003,3 +3027,18 @@ p.cardp {
 .custom-item:hover {
     background-color: #f0f0f0;
 } */
+.mt--200 {
+    margin-top: 200px;
+}
+
+.mt--150 {
+    margin-top: 150px;
+}
+
+.mt--100 {
+    margin-top: 100px;
+}
+
+.mt--90 {
+    margin-top: 90px;
+}
